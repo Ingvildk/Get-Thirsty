@@ -1,0 +1,360 @@
+div.main {
+  flex: 1 0 auto; /* 2 */
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+
+
+div.main::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+}
+
+
+
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+  background-color: gray;
+}
+
+
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none;
+}
+
+
+.InputAddOn {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.InputAddOn-field {
+  flex: 1;
+}
+.InputAddOn-field:not(:first-child) {
+  border-left: 0;
+}
+.InputAddOn-field:not(:last-child) {
+  border-right: 0;
+}
+
+.InputAddOn-item {
+  background-color: rgba(147, 128, 108, 0.1);
+  color: #666666;
+  font: inherit;
+  font-weight: normal;
+}
+
+.InputAddOn-field,
+.InputAddOn-item {
+  border: 1px solid rgba(147, 128, 108, 0.25);
+  padding: 0.5em 0.75em;
+}
+.InputAddOn-field:first-child,
+.InputAddOn-item:first-child {
+  border-radius: 2px 0 0 2px;
+}
+.InputAddOn-field:last-child,
+.InputAddOn-item:last-child {
+  border-radius: 0 2px 2px 0;
+}
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 2.15px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(0, 19, 35, 0.78);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -2.35px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(0, 44, 81, 0.78);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(0, 19, 35, 0.78);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0.78);
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(0, 19, 35, 0.78);
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 4.7px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(0, 19, 35, 0.78);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(0, 44, 81, 0.78);
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 2.15px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(0, 19, 35, 0.78);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -2.35px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(0, 44, 81, 0.78);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(0, 19, 35, 0.78);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0.78);
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(0, 19, 35, 0.78);
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 4.7px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(0, 19, 35, 0.78);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(0, 44, 81, 0.78);
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 2.15px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(0, 19, 35, 0.78);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -2.35px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(0, 108, 198, 0.78);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(0, 19, 35, 0.78);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0.78);
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(0, 19, 35, 0.78);
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0.9px 0.9px 1px #000031, 0px 0px 0.9px #00004b;
+  border: 1.8px solid #00001e;
+  height: 9px;
+  width: 18px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 4.7px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(0, 19, 35, 0.78);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(0, 108, 198, 0.78);
+}
+
+
+nav.carousel:hover {
+  cursor: default;
+}
+
+/* Hide the radio button */
+nav.carousel input[type=radio] {
+  display: none;
+}
+
+/* All styling takes place on the label element */
+nav.carousel label {
+  display: inline-block;
+  background: #ddd;
+  overflow: hidden;
+  text-indent: -999px;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  box-shadow: inset 0 1px 1px 0 #999;
+}
+nav.carousel label:hover {
+  background: #bbb;
+  cursor: pointer;
+  box-shadow: inset 0 1px 1px 0 #777;
+}
+nav.carousel input:checked + label {
+  background: linear-gradient(#00CFFF, #1584bc);
+  box-shadow: inset 0 0 1px 1px #087DC0;
+}

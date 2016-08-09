@@ -1,0 +1,181 @@
+div.chat {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+},
+.name {
+    font-size: 18px;
+},
+.profileMain {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+},
+.profilePhoto {
+    width: 100px;
+    height: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+.Col {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+.photo {
+    max-width: 200px;
+    max-height: 100px;
+    flex-grow: 1;
+    flex-shrink: 4;
+}
+.text {
+    max-width: 300px;
+    max-height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-text: center;
+    margin-top: 50px;
+    margin-left:24px;
+}
+.text_two {
+    text-align: center;
+}
+/*
+.button {
+    max-width: 150px;
+    max-height: 150px;
+    flex-grow: 1;
+    flex-shrink: 2;
+    margin-top: 60px;
+    margin-left:80px;
+}*/
+.Button {
+    margin-left: 204px;
+}
+
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+}
+
+.HolyGrail-content {
+  flex: 1;
+}
+
+.HolyGrail-nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+.messageFlex {
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+}
+.messagePhoto {
+    width:180px;
+    height:171px;
+}
+p.messageText {
+    background-color: #00CCFF;
+
+}
+div.messageText {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+p.divmessageText {
+    flex-grow:0;
+    flex-shrink:1x;
+    background-image: url('../images/rightMessager.jpg');
+    background-size: 100%;
+}
+div.rightText {
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+
+.bubble {
+    margin: 10px 12px 6px;
+    padding: 4px 8px 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3), inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    background: #4AB1F5;
+    border-radius: 8px;
+    max-width: 240px;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.12);
+    background-size: cover;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+.bubble_alternative {
+    background: #F0F8FF;
+    margin: 10px 12px 6px;
+    padding: 4px 8px 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3), inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    max-width: 240px;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.12);
+    background-size: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+.messageInput {
+    margin: 10px 12px 6px;
+    padding: 4px 8px 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3), inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    /*border-radius: 8px; */
+    text-shadow: 0 2px rgba(0, 0, 0, 0.12);
+}
+.buttonMessage {
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-end;
+}
+.buttonMessage_two {
+    margin-top: 0px;
+    padding: 8px 30 px;
+    margin: 0px 0px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.messages, .MaxChatList, .MaxMatchProfile, .MaxProfile, .MaxUser, .MaxUserList, .message, .home, .Col, .MaxMatchUser, .profile, .MaxUsers2 {
+    max-height: 75vh;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+    overflow:hidden;
+}

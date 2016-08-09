@@ -1,0 +1,10 @@
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+
+.ball-clip-rotate>div {
+    border: 2px solid #0F0E0E;
+}
